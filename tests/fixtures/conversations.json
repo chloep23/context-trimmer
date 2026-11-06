@@ -1,0 +1,208 @@
+{
+ "conversations": [
+  {
+   "name": "steady",
+   "limit": 120,
+   "messages": [
+    {
+     "id": "s1",
+     "role": "system",
+     "tokens": 20,
+     "answers": null
+    },
+    {
+     "id": "u1",
+     "role": "user",
+     "tokens": 15,
+     "answers": null
+    },
+    {
+     "id": "a1",
+     "role": "assistant",
+     "tokens": 12,
+     "answers": null
+    },
+    {
+     "id": "c1",
+     "role": "tool_call",
+     "tokens": 10,
+     "answers": null
+    },
+    {
+     "id": "r1",
+     "role": "tool_result",
+     "tokens": 25,
+     "answers": "c1"
+    },
+    {
+     "id": "a2",
+     "role": "assistant",
+     "tokens": 14,
+     "answers": null
+    },
+    {
+     "id": "u2",
+     "role": "user",
+     "tokens": 24,
+     "answers": null
+    }
+   ]
+  },
+  {
+   "name": "one_over",
+   "limit": 119,
+   "messages": [
+    {
+     "id": "s1",
+     "role": "system",
+     "tokens": 20,
+     "answers": null
+    },
+    {
+     "id": "u1",
+     "role": "user",
+     "tokens": 15,
+     "answers": null
+    },
+    {
+     "id": "a1",
+     "role": "assistant",
+     "tokens": 12,
+     "answers": null
+    },
+    {
+     "id": "c1",
+     "role": "tool_call",
+     "tokens": 10,
+     "answers": null
+    },
+    {
+     "id": "r1",
+     "role": "tool_result",
+     "tokens": 25,
+     "answers": "c1"
+    },
+    {
+     "id": "a2",
+     "role": "assistant",
+     "tokens": 14,
+     "answers": null
+    },
+    {
+     "id": "u2",
+     "role": "user",
+     "tokens": 24,
+     "answers": null
+    }
+   ]
+  },
+  {
+   "name": "two_phase",
+   "limit": 90,
+   "messages": [
+    {
+     "id": "s1",
+     "role": "system",
+     "tokens": 30,
+     "answers": null
+    },
+    {
+     "id": "u1",
+     "role": "user",
+     "tokens": 20,
+     "answers": null
+    },
+    {
+     "id": "a1",
+     "role": "assistant",
+     "tokens": 18,
+     "answers": null
+    },
+    {
+     "id": "c1",
+     "role": "tool_call",
+     "tokens": 12,
+     "answers": null
+    },
+    {
+     "id": "r1",
+     "role": "tool_result",
+     "tokens": 16,
+     "answers": "c1"
+    },
+    {
+     "id": "a2",
+     "role": "assistant",
+     "tokens": 22,
+     "answers": null
+    },
+    {
+     "id": "c2",
+     "role": "tool_call",
+     "tokens": 11,
+     "answers": null
+    },
+    {
+     "id": "r2",
+     "role": "tool_result",
+     "tokens": 14,
+     "answers": "c2"
+    },
+    {
+     "id": "a3",
+     "role": "assistant",
+     "tokens": 17,
+     "answers": null
+    },
+    {
+     "id": "u2",
+     "role": "user",
+     "tokens": 25,
+     "answers": null
+    }
+   ]
+  },
+  {
+   "name": "overflow",
+   "limit": 60,
+   "messages": [
+    {
+     "id": "s1",
+     "role": "system",
+     "tokens": 45,
+     "answers": null
+    },
+    {
+     "id": "u1",
+     "role": "user",
+     "tokens": 18,
+     "answers": null
+    },
+    {
+     "id": "a1",
+     "role": "assistant",
+     "tokens": 20,
+     "answers": null
+    },
+    {
+     "id": "c1",
+     "role": "tool_call",
+     "tokens": 9,
+     "answers": null
+    },
+    {
+     "id": "r1",
+     "role": "tool_result",
+     "tokens": 22,
+     "answers": "c1"
+    },
+    {
+     "id": "u2",
+     "role": "user",
+     "tokens": 40,
+     "answers": null
+    }
+   ]
+  }
+ ]
+}

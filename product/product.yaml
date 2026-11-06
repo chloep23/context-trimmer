@@ -1,0 +1,20 @@
+_ > nanoagent.plugin.v0001.ProductConfig:
+tagline: "What to throw out of a context, and in what order"
+summary: >-
+  When an agent conversation outgrows its context window something has to go, and which something
+  matters: drop the system prompt and the agent forgets its job, drop a tool call and leave its
+  result behind and the transcript stops making sense. Context Trimmer takes a conversation, the
+  token cost of every message and a limit, and applies one written-down policy: protect the system
+  messages and the last thing the user said, shed tool results oldest-first, and only then start on
+  the rest, stopping the moment it fits. You get the messages that stay, the ones that went and the
+  order they went in, and whether it fit at all.
+highlights:
+  - "Never evicts more than the limit needs: the total is checked after every single step"
+  - "Protects the system prompt and the last user message, which naive trimming throws away first"
+  - "Says which conversation went wrong and what the policy gives, not just a number"
+  - "Reads only the file you point it at, and reaches no network at all"
+steps:
+  - "Write your conversations, with each message's token count and a limit, as JSON"
+  - "Ask what the trimmer would keep"
+  - "It walks each conversation, evicting one item at a time until it fits"
+  - "You get the kept ids, the evicted ids in order, the final total and a status"

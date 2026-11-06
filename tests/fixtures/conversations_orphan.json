@@ -1,0 +1,22 @@
+{
+ "conversations": [
+  {
+   "name": "orphan",
+   "limit": 50,
+   "messages": [
+    {
+     "id": "s1",
+     "role": "system",
+     "tokens": 10,
+     "answers": null
+    },
+    {
+     "id": "r1",
+     "role": "tool_result",
+     "tokens": 20,
+     "answers": "c9"
+    }
+   ]
+  }
+ ]
+}
